@@ -12,6 +12,9 @@ app.use(express.json());
 
 //routes
 app.use('/api/users', router);
+app.use('/test', (req, res) => {
+    res.send('API is working')
+})
 
 
 // mongoose connection
